@@ -91,7 +91,7 @@ Feature: A.2.3.0200. Assign administrators and account managers
     And I should see "Because you have restricted admin privileges, this page is read-only, and no settings can be modified"
     And I logout
 
-  Scenario: A.2.3.0200.100 Remove admin
+  Scenario: A.2.3.0200.200 Remove admin
     Given I login to REDCap with the user "Test_Admin"
     When I click on the link labeled "Control Center"
     Given I click on the link labeled "Administrator Privileges"
