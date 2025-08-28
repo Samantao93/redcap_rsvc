@@ -135,7 +135,7 @@ Feature: A.6.4.0600 Manage project creation, deletion, and settings. Control Cen
         And I click on the button labeled "Begin Editing"
         And I enable the Data Collection Instrument named "Consent" for the Event named "Event 2"
         And I click on the button labeled "Save" on the Designate Instruments for My Events page
-        Then I verify the Data Collection Instrument named "Consent" is enabled for the Event named "Event 1"
+        Then I verify the Data Collection Instrument named "Consent" is enabled for the Event named "Event 2"
 
         When I click on the link labeled "Record Status Dashboard"
         And I click on the link labeled "Arm 1"
