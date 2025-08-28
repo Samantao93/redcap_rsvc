@@ -68,16 +68,25 @@ Feature: Control Center: The system shall support the enabling/disabling of fiel
     # - Time (HH:MM)
     When I select "Text Box (Short Text, Number, Date/Time, ...)" on the dropdown field labeled "Field Type:" in the dialog box
     Then I should see the dropdown field labeled "Validation?" with the options below
-      | ---- None ----                    |
-      | Date (M-D-Y)                      |
-      | Date (Y-M-D)                      |
-      | Datetime (D-M-Y H:M)              |
-      | Datetime (Y-M-D H:M)              |
-      | Datetime w/ seconds (D-M-Y H:M:S) |
-      | Datetime w/ seconds (M-D-Y H:M:S) |
-      | Phone (North America)             |
-      | Time (HH:MM:SS)                   |
-      | Zipcode (U.S.)                    |
+      | ---- None ----                          |
+      | Date (M-D-Y)                            |
+      | Date (Y-M-D)                            |
+      | Datetime (D-M-Y H:M)                    |
+      | Datetime (Y-M-D H:M)                    |
+      | Datetime w/ seconds (D-M-Y H:M:S)       |
+      | Datetime w/ seconds (M-D-Y H:M:S)       |
+      | Letters only                            |
+      | Number (1 decimal place)                |
+      | Number (2 decimal places - comma as decimal) |
+      | Number (2 decimal places)               |
+      | Number (3 decimal places - comma as decimal) |
+      | Number (3 decimal places)               |
+      | Number (4 decimal places - comma as decimal) |
+      | Number (4 decimal places)               |
+      | Number (comma as decimal)               |
+      | Time (HH:MM:SS)                         |
+      | Time (MM:SS)                            |
+      | Zipcode (U.S.)                          |
     And I click on the button labeled "Cancel" on the dialog box
 
     #SETUP
@@ -121,23 +130,31 @@ Feature: Control Center: The system shall support the enabling/disabling of fiel
 
     When I select "Text Box (Short Text, Number, Date/Time, ...)" on the dropdown field labeled "Field Type:" in the dialog box
     Then I should see the dropdown field labeled "Validation?" with the options below
-      | ---- None ----                              |
-      | Date (D-M-Y)                                |
-      | Date (M-D-Y)                                |
-      | Date (Y-M-D)                                |
-      | Datetime (D-M-Y H:M)                        |
-      | Datetime (M-D-Y H:M)                        |
-      | Datetime (Y-M-D H:M)                        |
-      | Datetime w/ seconds (D-M-Y H:M:S)           |
-      | Datetime w/ seconds (M-D-Y H:M:S)           |
-      | Datetime w/ seconds (Y-M-D H:M:S)           |
-      | Email                                       |
-      | Integer                                     |
-      | Number                                      |
+      | ---- None ----                          |
+      | Date (M-D-Y)                            |
+      | Date (Y-M-D)                            |
+      | Datetime (D-M-Y H:M)                    |
+      | Datetime (Y-M-D H:M)                    |
+      | Datetime (M-D-Y H:M)                    |
+      | Datetime w/ seconds (D-M-Y H:M:S)       |
+      | Datetime w/ seconds (M-D-Y H:M:S)       |
+      | Datetime w/ seconds (Y-M-D H:M:S)       |
+      | Email                                   |
+      | Integer                                 |
+      | Letters only                            |
+      | Number                                  |
       | Number (1 decimal place - comma as decimal) |
-      | Phone (North America)                       |
-      | Time (HH:MM:SS)                             |
-      | Time (HH:MM)                                |
-      | Zipcode (U.S.)                              |
+      | Number (1 decimal place)                |
+      | Number (2 decimal places - comma as decimal) |
+      | Number (2 decimal places)               |
+      | Number (3 decimal places - comma as decimal) |
+      | Number (3 decimal places)               |
+      | Number (4 decimal places - comma as decimal) |
+      | Number (4 decimal places)               |
+      | Number (comma as decimal)               |
+      | Time (HH:MM:SS)                         |
+      | Time (HH:MM)                            |
+      | Time (MM:SS)                            |
+      | Zipcode (U.S.)                          |
     And I click on the button labeled "Cancel" on the dialog box
 #End
