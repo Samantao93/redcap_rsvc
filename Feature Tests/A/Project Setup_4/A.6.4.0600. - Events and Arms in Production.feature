@@ -91,6 +91,7 @@ Feature: A.6.4.0600 Manage project creation, deletion, and settings. Control Cen
 
         Given I add an event named "Event 4" with offset of 4 days into the currently selected arm
         Then I should see "Event 4" in the define events table
+        Then I should assign "Text Validation" to "Event 4"
 
         When I click on the link labeled "Logging"
         Then I should see table header and rows containing the following values in the logging table:
